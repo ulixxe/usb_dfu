@@ -1,0 +1,111 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Dec 5 2022 23:55:55
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 3 seconds
+
+Device Info:
+------------
+    Device Family: iCE40
+    Device:        iCE40LP8K
+    Package:       CM81
+
+Design statistics:
+------------------
+    FFs:                  635
+    LUTs:                 2963
+    RAMs:                 1
+    IOBs:                 9
+    GBs:                  7
+    PLLs:                 1
+    Warm Boots:           1
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 2975/7680
+        Combinational Logic Cells: 2340     out of   7680      30.4688%
+        Sequential Logic Cells:    635      out of   7680      8.26823%
+        Logic Tiles:               531      out of   960       55.3125%
+    Registers: 
+        Logic Registers:           635      out of   7680      8.26823%
+        IO Registers:              0        out of   1280      0
+    Block RAMs:                    1        out of   32        3.125%
+    Warm Boots:                    1        out of   1         0%
+    Pins:
+        Input Pins:                2        out of   63        3.1746%
+        Output Pins:               5        out of   63        7.93651%
+        InOut Pins:                2        out of   63        3.1746%
+    Global Buffers:                7        out of   8         87.5%
+    PLLs:                          1        out of   1         100%
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 1        out of   18        5.55556%
+    Bank 1: 0        out of   15        0%
+    Bank 0: 4        out of   17        23.5294%
+    Bank 2: 4        out of   13        30.7692%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name
+    ----------  ---------  -----------  -------  -------  -----------                                -----------
+    B2          Input      SB_LVCMOS    No       3        Simple Input                               clk     
+    H7          Input      SB_LVCMOS    No       2        Simple Input                               sdi     
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name
+    ----------  ---------  -----------  -------  -------  -----------                                -----------
+    A3          Output     SB_LVCMOS    No       0        Output Tristatable by Enable               usb_pu  
+    B3          Output     SB_LVCMOS    No       0        Simple Output                              led     
+    F7          Output     SB_LVCMOS    No       2        Simple Output                              ss      
+    G6          Output     SB_LVCMOS    No       2        Simple Output                              sdo     
+    G7          Output     SB_LVCMOS    No       2        Simple Output                              sck     
+
+    Inoutput Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name
+    ----------  ---------  -----------  -------  -------  -----------                                -----------
+    A4          InOut      SB_LVCMOS    No       0        Simple Input Output Tristatable by Enable  usb_n   
+    B4          InOut      SB_LVCMOS    No       0        Simple Input Output Tristatable by Enable  usb_p   
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name                       
+    -------------  -------  ---------  ------  -----------                       
+    5              2                   211     clk_c_g                           
+    4              0                   69      u_app.rt_rstn_i_g                 
+    3              3                   85      u_usb_dfu.u_fifo.out_ready_i_1_g  
+    1              0                   197     u_usb_dfu.u_fifo.rstn_i_g         
+    0              2                   73      u_usb_dfu.rstn_sq_i_g_0           
+    2              1                   88      u_app.un1_dfu_mode_i_i_g          
+    7              1                   157     u_usb_dfu.rstn_i_g                
+
+
+Router Summary:
+---------------
+    Status:  Successful
+    Runtime: 32 seconds
+
+Routing Resource Utilization:
+-----------------------------
+              Local line of tile    21721 out of 146184      14.8587%
+                          Span 4     4526 out of  29696      15.2411%
+                         Span 12      624 out of   5632      11.0795%
+                  Global network        8 out of      8      100%
+      Vertical Inter-LUT Connect      789 out of   6720      11.7411%
+

@@ -1,0 +1,10 @@
+# 
+## name ## flash_[^.]+\.status_o\[.*\]$
+## color ## Red
+## data ## Hex
+
+0  STATUS_OK
+5  STATUS_errCHECK_ERASED
+7  STATUS_errVERIFY
+8  STATUS_errADDRESS
+F  STATUS_END

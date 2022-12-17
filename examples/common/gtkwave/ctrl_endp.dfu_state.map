@@ -1,0 +1,17 @@
+# 
+## name ## ctrl_endp\.dfu_state
+## color ## Blue
+## data ## Decimal
+
+0  DFU_ST_appIDLE
+1  DFU_ST_appDETACH
+2  DFU_ST_dfuIDLE
+3  DFU_ST_dfuDNLOAD_SYNC
+4  DFU_ST_dfuDNBUSY
+5  DFU_ST_dfuDNLOAD_IDLE
+6  DFU_ST_dfuMANIFEST_SYNC
+7  DFU_ST_dfuMANIFEST
+8  DFU_ST_dfuMANIFEST_WAIT_RESET
+9  DFU_ST_dfuUPLOAD_IDLE
+10 DFU_ST_dfuERROR
+11 DFU_ST_dfuIDLE0
